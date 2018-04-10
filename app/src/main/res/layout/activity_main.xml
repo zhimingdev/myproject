@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zzmfaster.myapplication.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <com.zzmfaster.myapplication.custom.bottombar.BottomBarLayout
+        android:id="@+id/bbl"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@color/tab_gb">
+
+        <com.zzmfaster.myapplication.custom.bottombar.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@drawable/icon_home_normal"
+            app:iconSelected="@drawable/icon_home_selected"
+            app:itemText="首页"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/tab_selected_color"
+            app:itemTextSize="12sp"
+            app:itemMarginTop="2dp" />
+
+        <com.zzmfaster.myapplication.custom.bottombar.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@drawable/icon_discover_normal"
+            app:iconSelected="@drawable/icon_discover_selected"
+            app:itemText="发现"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/tab_selected_color"
+            app:itemTextSize="12sp"
+            app:itemMarginTop="2dp" />
+
+
+        <com.zzmfaster.myapplication.custom.bottombar.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@drawable/icon_learn_normal"
+            app:iconSelected="@drawable/icon_learn_selected"
+            app:itemText="装修"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/tab_selected_color"
+            app:itemTextSize="12sp"
+            app:itemMarginTop="2dp" />
+
+        <com.zzmfaster.myapplication.custom.bottombar.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:iconNormal="@drawable/icon_mine_normal"
+            app:iconSelected="@drawable/icon_mine_selected"
+            app:itemText="我的"
+            app:textColorNormal="@color/tab_normal_color"
+            app:textColorSelected="@color/tab_selected_color"
+            app:itemTextSize="12sp"
+            app:itemMarginTop="2dp" />
+
+    </com.zzmfaster.myapplication.custom.bottombar.BottomBarLayout>
+</LinearLayout>

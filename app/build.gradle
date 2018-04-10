@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+//android配置
+def config = rootProject.ext.android
+
+//相关库依赖
+def librarys = rootProject.ext.supportDependencies
+
+android {
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+    defaultConfig {
+        applicationId "com.zzmfaster.myapplication"
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        android.compileOptions.sourceCompatibility 1.8
+        android.compileOptions.targetCompatibility 1.8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation librarys.supportAppcompat
+    implementation librarys.supportDesign
+    implementation librarys.butterknife
+    implementation librarys.eventbus
+    implementation librarys.BottomBarLayout
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation librarys.discretescrollview
+    implementation librarys.baserecycleradapter
+    implementation librarys.glide
+    implementation librarys.cardview
+    implementation librarys.transformations
+}

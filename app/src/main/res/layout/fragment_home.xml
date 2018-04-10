@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.zzmfaster.myapplication.custom.MyScrollview
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/test"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="主页面"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="主页面"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="主页面"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="主页面"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="主页面"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="主页面"
+        android:gravity="center"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:text="主页面"
+           android:gravity="center"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:text="主页面"
+           android:gravity="center"/>
+   </LinearLayout>
+    </com.zzmfaster.myapplication.custom.MyScrollview>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <View
+                android:id="@+id/searchBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.0"
+                android:paddingTop="20dp" />
+
+            <TextView
+                android:id="@+id/searchTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/icon_mine_normal"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="输入搜索内容.."
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

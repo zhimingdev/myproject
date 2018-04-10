@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="tab_find">发现</string>
+    <string name="tab_decoration">商城</string>
+    <string name="right_share">分享</string>
+    <string name="decorttion_map_title">地图</string>
+</resources>
